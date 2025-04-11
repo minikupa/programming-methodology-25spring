@@ -4,7 +4,7 @@ public:
     void init();     // replaces constructor
     void destroy();  // replaces destructor
 
-    void add_task(const char* task);
+    void add_task(const char *task);
     void remove_task(int index);
     const char** get_pending_tasks(int& count) const;
 

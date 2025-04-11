@@ -8,6 +8,7 @@ TEST(TodoListTest, AddSingleTask) {
 
     int count;
     const char** tasks = todo.get_pending_tasks(count);
+    std::cout << count;
 
     ASSERT_EQ(count, 1);
     EXPECT_STREQ(tasks[0], "Write code");
